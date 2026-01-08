@@ -1,12 +1,30 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2025-07-15',
-  devtools: { enabled: true },
+  modules: ["@nuxt/eslint", "@nuxt/ui", "@nuxt/a11y", "@nuxt/image"],
 
-  modules: [
-    '@nuxt/image',
-    '@nuxt/ui',
-    '@nuxt/a11y',
-    '@nuxt/eslint'
-  ]
-})
+  devtools: {
+    enabled: true,
+  },
+
+  ssr: true,
+
+  routeRules: {
+    "/": { prerender: true, static: true },
+    "/classes": { static: true },
+
+    "/classes/**": { ssr: true },
+  },
+
+  css: ["~/assets/css/main.css"],
+
+  compatibilityDate: "2025-01-15",
+
+  eslint: {
+    config: {
+      stylistic: {
+        commaDangle: "never",
+        braceStyle: "1tbs",
+      },
+    },
+  },
+});
