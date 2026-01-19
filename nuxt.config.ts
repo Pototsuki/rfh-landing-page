@@ -1,4 +1,6 @@
+/* eslint-disable nuxt/nuxt-config-keys-order */
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
 export default defineNuxtConfig({
   modules: [
     "@nuxt/eslint",
@@ -22,6 +24,30 @@ export default defineNuxtConfig({
     "/classes": { static: true },
     "/classes/**": { ssr: true },
   },
+
+  i18n: {
+    defaultLocale: "id",
+    locales: [
+      { code: "en", name: "English", file: "en.json" },
+      { code: "id", name: "Indonesia", file: "id.json" },
+    ],
+    strategy: "no_prefix",
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: "lang",
+      alwaysRedirect: false,
+      fallbackLocale: "id",
+    },
+  },
+
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: "id",
+      },
+    },
+  },
+
   compatibilityDate: "2025-01-15",
 
   eslint: {

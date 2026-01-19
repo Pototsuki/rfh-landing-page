@@ -9,7 +9,7 @@ export default withNuxt([
   {
     rules: {
       "stylistic/*": "off",
-      "vue/*": "off",
+      // "vue/*": "off",
     },
   },
 ]);
