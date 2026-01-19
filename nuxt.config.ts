@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     "@nuxt/ui",
     "@nuxt/a11y",
     "@nuxt/image",
+    "@nuxt/content",
     "@nuxtjs/i18n",
     "@nuxtjs/seo",
   ],
