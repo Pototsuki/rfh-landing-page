@@ -28,6 +28,7 @@ export default defineNuxtConfig({
     config: {
       stylistic: {
         commaDangle: "always",
+        quotes: "double",
       },
     },
   },

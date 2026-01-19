@@ -1,11 +1,15 @@
 import withNuxt from "./.nuxt/eslint.config.mjs";
+import prettier from "eslint-config-prettier";
 
-export default withNuxt({
-  rules: {
-    // stylistic (JS/TS)
-    "stylistic/*": "off",
+export default withNuxt([
+  // 1️⃣ Matikan semua rule formatting ESLint
+  prettier,
 
-    // stylistic (Vue)
-    "vue/comma-dangle": "off",
+  // 2️⃣ Matikan stylistic Nuxt + Vue
+  {
+    rules: {
+      "stylistic/*": "off",
+      "vue/*": "off",
+    },
   },
-});
+]);
