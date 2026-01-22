@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     "@nuxt/a11y",
     "@nuxt/image",
     "@nuxt/content",
+    "@nuxt/fonts",
     "@nuxtjs/i18n",
     "@nuxtjs/seo",
   ],
@@ -49,6 +50,17 @@ export default defineNuxtConfig({
     },
   },
 
+  fonts: {
+    families: [
+      {
+        name: "Outfit",
+        provider: "google",
+        weights: [300, 400, 500, 600, 700],
+        styles: ["normal"],
+      },
+    ],
+  },
+
   compatibilityDate: "2025-01-15",
 
   eslint: {
@@ -58,5 +70,9 @@ export default defineNuxtConfig({
         quotes: "double",
       },
     },
+  },
+
+  devServer: {
+    port: 5100,
   },
 });
