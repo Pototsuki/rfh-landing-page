@@ -1,0 +1,41 @@
+locale: en
+hero:
+  title: Build SaaS Faster
+  subtitle: Everything you need to start your digital product.
+  links:
+    - label: Get started
+      to: /docs
+      variant: solid
+      color: primary
+      icon: i-heroicons-arrow-right
+
+    - label: Use this template
+      to: https://github.com/nuxt-ui-templates/saas
+      variant: outline
+      color: gray
+      icon: i-simple-icons-github
+      target: _blank
+
+features:
+  title: Why choose us?
+  items:
+    - title: Fast & Modern
+      description: Built with Nuxt 4 and the latest Nuxt UI.
+      icon: i-heroicons-bolt
+
+    - title: i18n Ready
+      description: Clean multilingual structure out of the box.
+      icon: i-heroicons-language
+
+    - title: SEO Friendly
+      description: Easy and scalable SEO optimization.
+      icon: i-heroicons-magnifying-glass
+
+cta:
+  title: Ready to start?
+  description: Start building your first SaaS product today.
+  links:
+    - label: Get Started
+      to: /docs
+      variant: solid
+      color: primary

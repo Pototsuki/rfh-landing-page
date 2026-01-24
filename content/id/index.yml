@@ -1,0 +1,46 @@
+locale: id
+
+seo:
+  title: Solusi SaaS untuk Tim Modern
+  description: Platform SaaS untuk membangun produk lebih cepat dan efisien.
+
+hero:
+  title: Bangun SaaS Lebih Cepat
+  subtitle: Semua yang kamu butuhkan untuk memulai produk digital.
+  links:
+    - label: Get started
+      to: /docs
+      variant: solid
+      color: primary
+      icon: i-heroicons-arrow-right
+
+    - label: Use this template
+      to: https://github.com/nuxt-ui-templates/saas
+      variant: outline
+      color: gray
+      icon: i-simple-icons-github
+      target: _blank
+
+features:
+  title: Kenapa memilih kami?
+  items:
+    - title: Cepat & Modern
+      description: Dibangun dengan Nuxt 4 dan Nuxt UI terbaru.
+      icon: i-heroicons-bolt
+
+    - title: Siap i18n
+      description: Mendukung multi-bahasa dengan struktur rapi.
+      icon: i-heroicons-language
+
+    - title: SEO Friendly
+      description: Optimasi SEO yang mudah dan scalable.
+      icon: i-heroicons-magnifying-glass
+
+cta:
+  title: Siap memulai?
+  description: Mulai bangun produk SaaS pertamamu hari ini.
+  links:
+    - label: Mulai Sekarang
+      to: /docs
+      variant: solid
+      color: primary

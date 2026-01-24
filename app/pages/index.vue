@@ -1,9 +1,25 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const { locale } = useI18n();
+
+const { data: page } = await useAsyncData(
+  () => queryCollection("index").where("locale", "=", locale.value).first(),
+  { watch: [locale] },
+);
+
+const { data: seoPage } = await useAsyncData(() =>
+  queryCollection("index").where("locale", "=", "id").first(),
+);
+
+useSeoMeta({
+  title: seoPage.value?.seo?.title,
+  description: seoPage.value?.seo?.description,
+});
+</script>
 
 <template>
   <div>
     <UPageHero
-      :title="$t('welcome')"
+      :title="page?.hero.title"
       description="A production-ready starter template powered by Nuxt UI. Build beautiful, accessible, and performant applications in minutes, not hours."
       :links="[
         {

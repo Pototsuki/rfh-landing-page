@@ -13,7 +13,7 @@ export default defineNuxtConfig({
     "@nuxtjs/seo",
   ],
 
-  ssr: true,
+  ssr: false,
 
   devtools: {
     enabled: true,
@@ -23,15 +23,13 @@ export default defineNuxtConfig({
 
   routeRules: {
     "/": { prerender: true, static: true },
-    "/classes": { static: true },
-    "/classes/**": { ssr: true },
   },
 
   i18n: {
     defaultLocale: "id",
     locales: [
-      { code: "en", name: "English", file: "en.json" },
-      { code: "id", name: "Indonesia", file: "id.json" },
+      { code: "en", name: "English" },
+      { code: "id", name: "Indonesia" },
     ],
     strategy: "no_prefix",
     detectBrowserLanguage: {

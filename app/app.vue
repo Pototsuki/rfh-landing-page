@@ -27,23 +27,12 @@ useSeoMeta({
     <UHeader>
       <template #left>
         <NuxtLink to="/" aria-label="Home">
-          <AppLogo class="w-auto h-6 shrink-0" />
+          <AppLogo class="w-auto h-8 md:h-10 shrink-0" />
         </NuxtLink>
-
-        <TemplateMenu />
       </template>
 
       <template #right>
         <UColorModeButton />
-
-        <UButton
-          to="https://github.com/nuxt-ui-templates/starter"
-          target="_blank"
-          icon="i-simple-icons-github"
-          aria-label="GitHub"
-          color="neutral"
-          variant="ghost"
-        />
       </template>
     </UHeader>
 
