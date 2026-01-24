@@ -15,12 +15,15 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: "pnpm"
 
-      - run: corepack enable
-      - run: corepack prepare pnpm@10.26.1 --activate
+      - name: Enable Corepack
+        run: corepack enable
 
-      - run: pnpm install --frozen-lockfile
+      - name: Setup pnpm
+        run: corepack prepare pnpm@10.26.1 --activate
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
 
       - name: Deploy to Vercel
         run: pnpm dlx vercel deploy --prod --yes
