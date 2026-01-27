@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     "@nuxt/fonts",
     "@nuxtjs/i18n",
     "@nuxtjs/seo",
+    "motion-v/nuxt",
   ],
 
   ssr: false,
