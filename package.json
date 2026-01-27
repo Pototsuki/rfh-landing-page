@@ -17,11 +17,12 @@
     "@nuxt/content": "^3.11.0",
     "@nuxt/fonts": "^0.12.1",
     "@nuxt/image": "2.0.0",
-    "@nuxt/ui": "^4.3.0",
+    "@nuxt/ui": "^4.4.0",
     "@nuxtjs/i18n": "10.2.1",
     "@nuxtjs/seo": "3.3.0",
     "better-sqlite3": "12.5.0",
-    "nuxt": "^4.2.2"
+    "nuxt": "^4.3.0",
+    "motion-v": "^1.10.2"
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.12.1",

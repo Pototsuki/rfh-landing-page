@@ -2,16 +2,11 @@ export default defineAppConfig({
   ui: {
     button: {
       slots: {
-        base: ["rounded-full"],
-      },
-      variants: {
-        size: {
-          lg: "px-6 py-3 text-base",
-        },
+        base: ["rounded-full cursor-pointer"],
       },
     },
     colors: {
-      primary: "blue",
+      primary: "primary",
       neutral: "neutral",
     },
   },

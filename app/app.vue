@@ -24,17 +24,7 @@ useSeoMeta({
 
 <template>
   <UApp>
-    <UHeader>
-      <template #left>
-        <NuxtLink to="/" aria-label="Home">
-          <AppLogo class="w-auto h-8 md:h-10 shrink-0" />
-        </NuxtLink>
-      </template>
-
-      <template #right>
-        <UColorModeButton />
-      </template>
-    </UHeader>
+    <AppHeader></AppHeader>
 
     <main>
       <UMain>
@@ -42,25 +32,8 @@ useSeoMeta({
       </UMain>
     </main>
 
-    <USeparator icon="i-simple-icons-nuxtdotjs" />
-
     <UFooter>
-      <template #left>
-        <p class="text-sm text-muted">
-          Built with Nuxt UI • © {{ new Date().getFullYear() }}
-        </p>
-      </template>
-
-      <template #right>
-        <UButton
-          to="https://github.com/nuxt-ui-templates/starter"
-          target="_blank"
-          icon="i-simple-icons-github"
-          aria-label="GitHub"
-          color="neutral"
-          variant="ghost"
-        />
-      </template>
+      <template #right> </template>
     </UFooter>
   </UApp>
 </template>

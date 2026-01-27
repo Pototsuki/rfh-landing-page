@@ -1,7 +1,16 @@
 locale: en
+
+seo:
+  title: Premium Virtual Assistants More Time and Freedom
+  description: Platform SaaS untuk membangun produk lebih cepat dan efisien.
+
+header:
+  button:
+    join_now: Join Now
+
 hero:
-  title: Build SaaS Faster
-  subtitle: Everything you need to start your digital product.
+  title: Bangun SaaS Lebih Cepat
+  subtitle: Our Executive Virtual Assistants each have over 10 years of experience, ensuring top-notch support and productivity for your business. Ready to work with the best?
   links:
     - label: Get started
       to: /docs
@@ -17,25 +26,25 @@ hero:
       target: _blank
 
 features:
-  title: Why choose us?
+  title: Kenapa memilih kami?
   items:
-    - title: Fast & Modern
-      description: Built with Nuxt 4 and the latest Nuxt UI.
+    - title: Cepat & Modern
+      description: Dibangun dengan Nuxt 4 dan Nuxt UI terbaru.
       icon: i-heroicons-bolt
 
-    - title: i18n Ready
-      description: Clean multilingual structure out of the box.
+    - title: Siap i18n
+      description: Mendukung multi-bahasa dengan struktur rapi.
       icon: i-heroicons-language
 
     - title: SEO Friendly
-      description: Easy and scalable SEO optimization.
+      description: Optimasi SEO yang mudah dan scalable.
       icon: i-heroicons-magnifying-glass
 
 cta:
-  title: Ready to start?
-  description: Start building your first SaaS product today.
+  title: Siap memulai?
+  description: Mulai bangun produk SaaS pertamamu hari ini.
   links:
-    - label: Get Started
+    - label: Mulai Sekarang
       to: /docs
       variant: solid
       color: primary
