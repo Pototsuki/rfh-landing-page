@@ -31,12 +31,21 @@ useSeoMeta({
     />
 
     <!-- Mobile: full ultra dark -->
-    <div class="absolute inset-0 bg-primary-500/90 lg:hidden" />
+    <div
+      class="absolute inset-0 bg-primary-500/90 dark:bg-black/90 lg:hidden"
+    />
 
     <!-- Desktop: ultra dark left, smooth fade -->
-    <div
-      class="absolute inset-0 hidden lg:block bg-linear-to-r from-primary-500 dark:from-black via-primary-900/95 dark:via-black/95 via-50% to-transparent"
-    ></div>
+    <Motion
+      class="absolute inset-0 hidden lg:block origin-left bg-linear-to-r from-primary-500 dark:from-black via-primary-900/95 dark:via-black/95 via-50% to-transparent"
+      :initial="{ opacity: 0, scaleX: 0.85 }"
+      :animate="{ opacity: 1, scaleX: 1 }"
+      :transition="{
+        duration: 0.9,
+        ease: [0.22, 1, 0.36, 1],
+        delay: 0.15,
+      }"
+    />
 
     <!-- Content -->
     <div class="relative z-10 h-full grid place-items-center">
