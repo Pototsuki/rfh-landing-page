@@ -37,7 +37,7 @@ useSeoMeta({
 
     <!-- Desktop: ultra dark left, smooth fade -->
     <Motion
-      class="absolute inset-0 hidden lg:block origin-left bg-linear-to-r from-primary-500 dark:from-black via-primary-900/95 dark:via-black/95 via-50% to-transparent"
+      class="absolute inset-0 hidden lg:block origin-left bg-linear-to-r from-primary-500 dark:from-neutral-950 via-primary-900/95 dark:via-neutral-950/95 via-50% to-transparent"
       :initial="{ opacity: 0, scaleX: 0.85 }"
       :animate="{ opacity: 1, scaleX: 1 }"
       :transition="{
