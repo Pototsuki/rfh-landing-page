@@ -122,9 +122,8 @@ useIntersectionObserver(
               class="relative border-2 border-primary-800 rounded-2xl w-full max-w-lg lg:max-w-none"
             >
               <NuxtImg
-                src="https://picsum.photos/704/1294"
-                alt="Illustration"
-                provider="ipx"
+                src="https://s29814.pcdn.co/wp-content/uploads/2022/11/shutterstock_1477336820.jpg.optimal.jpg"
+                alt="about-us-what-we-do"
                 format="webp"
                 sizes="(max-width: 1024px) 90vw, 704px"
                 preload
