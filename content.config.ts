@@ -3,10 +3,7 @@ import { defineCollection, z } from "@nuxt/content";
 const linkSchema = z.object({
   label: z.string(),
   to: z.string(),
-  icon: z.string().optional(),
   target: z.string().optional(),
-  variant: z.enum(["solid", "outline", "link"]).optional(),
-  color: z.enum(["primary", "gray"]).optional(),
 });
 
 const featureSchema = z.object({
@@ -38,9 +35,11 @@ export const collections = {
         .optional(),
 
       hero: z.object({
-        title: z.string(),
+        title_parts: z.array(),
+        highlight: z.string(),
         subtitle: z.string().optional(),
-        links: z.array(linkSchema),
+        supporting: z.string().optional(),
+        cta: z.array(linkSchema),
       }),
 
       features: z.object({

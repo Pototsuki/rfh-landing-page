@@ -6,45 +6,26 @@ seo:
 
 header:
   button:
-    join_now: Daftar Sekarang
+    join_now: Join Now
 
 hero:
-  title: Premium Virtual Assistants More Time and Freedom
-  subtitle: Our Executive Virtual Assistants each have over 10 years of experience, ensuring top-notch support and productivity for your business. Ready to work with the best?
-  links:
-    - label: Get started
-      to: /docs
-      variant: solid
+  title_parts:
+    - Build
+    - Remote Teams
+    - You Can Trust.
+  highlight: Remote Teams
+  subtitle: Remote For Hive is a curated talent ecosystem. We train, vet, and deploy Virtual Assistants aligned with your business standards.
+  supporting: From general support to role-specific specialists — built for real operational needs.
+  cta:
+    - label: Start a Partnership
+      to: /idk
       color: primary
-      icon: i-heroicons-arrow-right
-
-    - label: Use this template
-      to: https://github.com/nuxt-ui-templates/saas
-      variant: outline
-      color: gray
-      icon: i-simple-icons-github
       target: _blank
-
-features:
-  title: Kenapa memilih kami?
-  items:
-    - title: Cepat & Modern
-      description: Dibangun dengan Nuxt 4 dan Nuxt UI terbaru.
-      icon: i-heroicons-bolt
-
-    - title: Siap i18n
-      description: Mendukung multi-bahasa dengan struktur rapi.
-      icon: i-heroicons-language
-
-    - title: SEO Friendly
-      description: Optimasi SEO yang mudah dan scalable.
-      icon: i-heroicons-magnifying-glass
-
-cta:
-  title: Siap memulai?
-  description: Mulai bangun produk SaaS pertamamu hari ini.
-  links:
-    - label: Mulai Sekarang
-      to: /docs
-      variant: solid
+    - label: Build a Custom VA Program
+      to: /idk
       color: primary
+      target: _blank
+    - label: Request Talent Deck
+      to: /idk
+      color: primary
+      target: _blank

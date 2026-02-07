@@ -17,22 +17,18 @@ const { data: pageContent } = await useAsyncData(
 
     <template #right>
       <!-- Desktop -->
-      <UColorModeButton class="hidden md:inline-flex cursor-pointer" />
-
       <UButton
         aria-label="Join Now"
         color="primary"
-        size="lg"
+        size="md"
         variant="solid"
         :label="pageContent?.header?.button.join_now"
-        class="hover:bg-primary-700"
+        class="hover:bg-primary-900 p-3 px-5 bg-background-800 tracking-wide"
       />
     </template>
 
     <template #body>
       <USeparator class="my-6" />
-
-      <UColorModeButton class="cursor-pointer" />
     </template>
   </UHeader>
 </template>
