@@ -21,7 +21,7 @@ const { data: pageContent } = await useAsyncData(
         size="xl"
         variant="solid"
         :label="pageContent?.header?.button.join_now"
-        class="hover:bg-primary-900 p-3 px-8 bg-background-800 tracking-wide"
+        class="p-3 px-8 bg-background-800 text-primary-text border-2 border-primary-500! tracking-wide"
       />
       <UButton
         aria-label="Join Now"
@@ -29,7 +29,7 @@ const { data: pageContent } = await useAsyncData(
         size="xl"
         variant="solid"
         :label="'See Courses'"
-        class="hover:bg-primary-900 p-3 px-8 bg-background-800 tracking-wide"
+        class="p-3 px-8 bg-background-800 text-primary-text border-2 border-primary-500! tracking-wide"
       />
     </template>
   </UPageCTA>
