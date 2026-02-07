@@ -10,5 +10,13 @@ useSeoMeta({
 </script>
 
 <template>
-  <AppMainHero></AppMainHero>
+  <section>
+    <AppMainHero></AppMainHero>
+    <AppAboutUs></AppAboutUs>
+    <AppSpecialization></AppSpecialization>
+    <AppPipeline></AppPipeline>
+    <AppFaq></AppFaq>
+    <USeparator color="primary"></USeparator>
+    <AppCtaFooter></AppCtaFooter>
+  </section>
 </template>

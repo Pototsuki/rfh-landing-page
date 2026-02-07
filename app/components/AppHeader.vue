@@ -17,6 +17,7 @@ const { data: pageContent } = await useAsyncData(
 
     <template #right>
       <!-- Desktop -->
+      <LanguageSwitcher></LanguageSwitcher>
       <UButton
         aria-label="Join Now"
         color="primary"

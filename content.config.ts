@@ -12,6 +12,19 @@ const featureSchema = z.object({
   icon: z.string(),
 });
 
+const faqItemSchema = z.object({
+  question: z.string(),
+  answer: z.string(),
+});
+
+const pipelinePhaseSchema = z.object({
+  phase: z.string(),
+  title: z.string(),
+  description: z.string(),
+  side: z.enum(["left", "right"]).optional(),
+  icon: z.string().optional(),
+});
+
 export const collections = {
   index: defineCollection({
     source: "**/index.yml",
@@ -35,23 +48,36 @@ export const collections = {
         .optional(),
 
       hero: z.object({
-        title_parts: z.array(),
+        title_parts: z.array(z.string()),
         highlight: z.string(),
         subtitle: z.string().optional(),
         supporting: z.string().optional(),
         cta: z.array(linkSchema),
       }),
 
-      features: z.object({
-        title: z.string(),
-        items: z.array(featureSchema),
-      }),
+      features: z
+        .object({
+          title: z.string(),
+          items: z.array(featureSchema),
+        })
+        .optional(),
 
-      cta: z.object({
-        title: z.string(),
-        description: z.string(),
-        links: z.array(linkSchema),
-      }),
+      /** 👉 PIPELINE SECTION */
+      pipeline: z
+        .object({
+          title: z.string(),
+          description: z.string().optional(),
+          phases: z.array(pipelinePhaseSchema),
+        })
+        .optional(),
+
+      faq: z
+        .object({
+          title: z.string().optional(),
+          description: z.string().optional(),
+          items: z.array(faqItemSchema),
+        })
+        .optional(),
     }),
   }),
 };

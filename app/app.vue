@@ -5,6 +5,9 @@ useHead({
   htmlAttrs: {
     lang: "en",
   },
+  bodyAttrs: {
+    class: "bg-background-950",
+  },
 });
 
 const title = "Nuxt Starter Template";
