@@ -2,7 +2,7 @@ export default defineAppConfig({
   ui: {
     header: {
       slots: {
-        root: "bg-background-900 backdrop-blur-xs border-b border-primary-900 h-(--ui-header-height) sticky top-0 z-50",
+        root: "bg-background-950/50 backdrop-blur-lg border-b border-background-800 h-(--ui-header-height) sticky top-0 z-50",
       },
     },
 
@@ -82,8 +82,8 @@ export default defineAppConfig({
 
     pageCTA: {
       slots: {
-        root: "bg-background-950! ",
-        title: "text-primary-text",
+        root: "bg-background-950!",
+        title: "text-primary-text!",
       },
     },
 
