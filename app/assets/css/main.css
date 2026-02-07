@@ -1,20 +1,116 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
+/* =========================================================
+   Base Typography
+   ---------------------------------------------------------
+   Default font stack for the entire application
+   ========================================================= */
 :root {
-  font-family: "Outfit", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", sans-serif;
+  font-family:
+    "Plus Jakarta Sans",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
 }
-@theme static {
-  --color-primary-50:  #eff6ff;
-  --color-primary-100: #dbeafe;
-  --color-primary-200: #bfdbfe;
-  --color-primary-300: #93c5fd;
-  --color-primary-400: #60a5fa;
-  --color-primary-500: #1e3a8a; 
-  --color-primary-600: #1e326f;
-  --color-primary-700: #1b2a5c;
-  --color-primary-800: #172554;
-  --color-primary-900: #0f1e3f;
 
+/* =========================================================
+   Design Tokens — Color System
+   ---------------------------------------------------------
+   Color scales follow Tailwind convention:
+   50   → very light / subtle background
+   100–200 → soft background / hover background
+   300–400 → subtle text / focus / icon
+   500  → default / primary usage
+   600  → hover / active
+   700–800 → strong text / border
+   900–950 → deep background
+   ========================================================= */
+@theme static {
+  /* =======================================================
+   PRIMARY — Calm Teal / Blue-Slate (Professional)
+   -------------------------------------------------------
+   Usage:
+   - Primary CTA
+   - Links
+   - Focus / active states
+   ======================================================= */
+
+  --color-primary-50: #fdf9ec;
+  --color-primary-100: #fbf1cf;
+  --color-primary-200: #f6e39f;
+  --color-primary-300: #efd46f;
+  --color-primary-400: #e5c14a;
+  --color-primary-500: #d4af37; /* DEFAULT champagne gold */
+  --color-primary-600: #c09218; /* hover / active */
+  --color-primary-700: #9e7613;
+  --color-primary-800: #7c5c10;
+  --color-primary-900: #5a420c;
+  --color-primary-950: #3a2a08;
+
+  /* =======================================================
+     SECONDARY — Info / Accent / Support (Cyan)
+     -------------------------------------------------------
+     Usage:
+     - Icons, info badges, secondary actions
+     - Links or highlights that are not primary CTAs
+     ======================================================= */
+  --color-secondary-50: #ecfeff;
+  --color-secondary-100: #cffafe;
+  --color-secondary-200: #a5f3fc;
+  --color-secondary-300: #67e8f9; /* text small / safe contrast */
+  --color-secondary-400: #38bdf8;
+  --color-secondary-500: #0ea5e9; /* DEFAULT */
+  --color-secondary-600: #0284c7; /* hover */
+  --color-secondary-700: #0369a1;
+  --color-secondary-800: #075985;
+  --color-secondary-900: #0c4a6e;
+  --color-secondary-950: #082f49;
+
+  /* =======================================================
+     BACKGROUND — Re-anchored scale
+     Base color is background-500
+     ======================================================= */
+
+  --color-background-50: #f5f8fb;
+  --color-background-100: #e6edf4;
+  --color-background-200: #c9d7e6;
+  --color-background-300: #a3bcd3;
+  --color-background-400: #6f97b5;
+  --color-background-500: #486b8c;
+  --color-background-600: #2f4f6e; /* elevated surface */
+  --color-background-700: #1c3d5a; /* card background */
+  --color-background-800: #102a43; /* BASE / default background */
+  --color-background-900: #0b1f33; /* page background (deep) */
+  --color-background-950: #071424; /* deepest / edge */
+
+  /* =======================================================
+     ACCENT — Neutral / Divider / Muted (Silver / Cool Gray)
+     -------------------------------------------------------
+     Usage:
+     - Muted text, icons, borders, dividers
+     - NEVER use for primary CTA
+     ======================================================= */
+  --color-accent-50: #f8fafc;
+  --color-accent-100: #f1f5f9;
+  --color-accent-200: #e2e8f0;
+  --color-accent-300: #cbd5e1; /* secondary text */
+  --color-accent-400: #a1aab8; /* muted text / icon */
+  --color-accent-500: #9ca3af; /* DEFAULT */
+  --color-accent-600: #7c8493; /* strong border */
+  --color-accent-700: #5f6673; /* subtle border */
+  --color-accent-800: #454b57;
+  --color-accent-900: #2f3440;
+  --color-accent-950: #171a22;
+
+  /* =======================================================
+     SEMANTIC TEXT TOKENS
+     -------------------------------------------------------
+     Abstracted tokens to avoid using raw colors directly
+     ======================================================= */
+  --color-primary-text: #ffffff; /* main text */
+  --color-secondary-text: var(--color-accent-300); /* body text */
+  --color-muted-text: var(--color-neutral-700); /* helper text */
 }

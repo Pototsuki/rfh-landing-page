@@ -9,42 +9,90 @@ header:
     join_now: Join Now
 
 hero:
-  title: Premium Virtual Assistants More Time and Freedom
-  subtitle: Our Executive Virtual Assistants each have over 10 years of experience, ensuring top-notch support and productivity for your business. Ready to work with the best?
-  links:
-    - label: Get started
-      to: /docs
-      variant: solid
+  title_parts:
+    - Build
+    - Remote Teams
+    - You Can Trust.
+  highlight: Remote Teams
+  subtitle: Remote For Hive is a curated talent ecosystem. We train, vet, and deploy Virtual Assistants aligned with your business standards.
+  supporting: From general support to role-specific specialists — built for real operational needs.
+  cta:
+    - label: Start a Partnership
+      to: /idk
       color: primary
-      icon: i-heroicons-arrow-right
-
-    - label: Use this template
-      to: https://github.com/nuxt-ui-templates/saas
-      variant: outline
-      color: gray
-      icon: i-simple-icons-github
+      target: _blank
+    - label: Build a Custom VA Program
+      to: /idk
+      color: primary
+      target: _blank
+    - label: Request Talent Deck
+      to: /idk
+      color: primary
       target: _blank
 
-features:
-  title: Kenapa memilih kami?
+pipeline:
+  title: Talent Readiness Pipeline
+  description: >
+    Every talent goes through the same core pipeline, then enters
+    role-specific training based on partner needs.
+
+  phases:
+    - phase: PHASE 01
+      title: Talent Foundation
+      description: >
+        Lay the groundwork by mastering essential VA tools, digital literacy,
+        and professional communication protocols.
+      side: left
+
+    - phase: PHASE 02
+      title: Skill Specialization
+      description: >
+        Deep dive into high-value niches. From Social Media Management to
+        Executive Administration.
+      side: right
+
+    - phase: PHASE 03
+      title: Performance Validation
+      description: >
+        Build a compelling body of work with real-world project samples.
+      side: left
+
+    - phase: PHASE 04
+      title: Client Readiness Simulation
+      description: >
+        Prepare for the global stage. Interview coaching, resume optimization,
+        and networking strategies.
+      side: right
+
+    - phase: PHASE 05
+      title: Deployment & Monitoring
+      description: >
+        Secure your first international client and transition into a life of
+        location independence.
+      side: left
+
+faq:
+  title: Frequently Asked Questions
+  description: Everything you need to know about working with Remote For Hive.
   items:
-    - title: Cepat & Modern
-      description: Dibangun dengan Nuxt 4 dan Nuxt UI terbaru.
-      icon: i-heroicons-bolt
+    - question: What is Remote For Hive?
+      answer: >
+        Remote For Hive is a curated talent ecosystem that trains, vets,
+        and deploys Virtual Assistants aligned with your business standards.
 
-    - title: Siap i18n
-      description: Mendukung multi-bahasa dengan struktur rapi.
-      icon: i-heroicons-language
+    - question: What types of Virtual Assistants do you provide?
+      answer: >
+        We provide general Virtual Assistants as well as role-specific
+        specialists such as admin support, operations, customer service,
+        and more.
 
-    - title: SEO Friendly
-      description: Optimasi SEO yang mudah dan scalable.
-      icon: i-heroicons-magnifying-glass
+    - question: How does the vetting process work?
+      answer: >
+        Every Virtual Assistant goes through a structured screening,
+        training, and evaluation process to ensure quality, reliability,
+        and cultural fit.
 
-cta:
-  title: Siap memulai?
-  description: Mulai bangun produk SaaS pertamamu hari ini.
-  links:
-    - label: Mulai Sekarang
-      to: /docs
-      variant: solid
-      color: primary
+    - question: Can I request a custom VA program?
+      answer: >
+        Yes. We work closely with partners to design custom VA programs
+        tailored to specific operational needs and workflows.

@@ -52,9 +52,9 @@ export default defineNuxtConfig({
   fonts: {
     families: [
       {
-        name: "Outfit",
+        name: "Plus Jakarta Sans",
         provider: "google",
-        weights: [300, 400, 500, 600, 700],
+        weights: [300, 400, 500, 600, 700, 800],
         styles: ["normal"],
       },
     ],

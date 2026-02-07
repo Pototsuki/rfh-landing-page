@@ -1,19 +1,24 @@
 <script setup lang="ts">
+import type { SelectItem } from "@nuxt/ui";
+
 const { locale, setLocale } = useI18n();
 
-function switchLang(lang: "id" | "en") {
-  setLocale(lang);
-}
+const options: SelectItem[] = [
+  { label: "EN", value: "en", icon: "i-heroicons-language" },
+  { label: "ID", value: "id", icon: "i-heroicons-language" },
+];
 </script>
 
 <template>
-  <div class="flex gap-2">
-    <button :class="{ active: locale === 'id' }" @click="switchLang('id')">
-      ID
-    </button>
-
-    <button :class="{ active: locale === 'en' }" @click="switchLang('en')">
-      EN
-    </button>
-  </div>
+  <USelect
+    v-model="locale"
+    :items="options"
+    size="lg"
+    variant="soft"
+    class="w-full"
+    :ui="{
+      base: 'rounded-full text-primary-text max-w-24',
+    }"
+    @update:model-value="(v) => setLocale(v as 'en' | 'id')"
+  />
 </template>

@@ -3,16 +3,26 @@ import { defineCollection, z } from "@nuxt/content";
 const linkSchema = z.object({
   label: z.string(),
   to: z.string(),
-  icon: z.string().optional(),
   target: z.string().optional(),
-  variant: z.enum(["solid", "outline", "link"]).optional(),
-  color: z.enum(["primary", "gray"]).optional(),
 });
 
 const featureSchema = z.object({
   title: z.string(),
   description: z.string(),
   icon: z.string(),
+});
+
+const faqItemSchema = z.object({
+  question: z.string(),
+  answer: z.string(),
+});
+
+const pipelinePhaseSchema = z.object({
+  phase: z.string(),
+  title: z.string(),
+  description: z.string(),
+  side: z.enum(["left", "right"]).optional(),
+  icon: z.string().optional(),
 });
 
 export const collections = {
@@ -38,21 +48,36 @@ export const collections = {
         .optional(),
 
       hero: z.object({
-        title: z.string(),
+        title_parts: z.array(z.string()),
+        highlight: z.string(),
         subtitle: z.string().optional(),
-        links: z.array(linkSchema),
+        supporting: z.string().optional(),
+        cta: z.array(linkSchema),
       }),
 
-      features: z.object({
-        title: z.string(),
-        items: z.array(featureSchema),
-      }),
+      features: z
+        .object({
+          title: z.string(),
+          items: z.array(featureSchema),
+        })
+        .optional(),
 
-      cta: z.object({
-        title: z.string(),
-        description: z.string(),
-        links: z.array(linkSchema),
-      }),
+      /** 👉 PIPELINE SECTION */
+      pipeline: z
+        .object({
+          title: z.string(),
+          description: z.string().optional(),
+          phases: z.array(pipelinePhaseSchema),
+        })
+        .optional(),
+
+      faq: z
+        .object({
+          title: z.string().optional(),
+          description: z.string().optional(),
+          items: z.array(faqItemSchema),
+        })
+        .optional(),
     }),
   }),
 };
