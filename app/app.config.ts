@@ -82,10 +82,8 @@ export default defineAppConfig({
 
     pageCTA: {
       slots: {
-        root: "bg-background-800! border-none!",
-        body: "border-none!",
+        root: "bg-background-950! ",
         title: "text-primary-text",
-        container: "border-none!",
       },
     },
 
