@@ -55,6 +55,13 @@ export const collections = {
         cta: z.array(linkSchema),
       }),
 
+      about_us: z.object({
+        title: z.string(),
+        description: z.string(),
+        remarks: z.string(),
+        description_2: z.string(),
+      }),
+
       features: z
         .object({
           title: z.string(),
@@ -65,7 +72,7 @@ export const collections = {
       /** 👉 PIPELINE SECTION */
       pipeline: z
         .object({
-          title: z.string(),
+          title_parts: z.array(z.string()),
           description: z.string().optional(),
           phases: z.array(pipelinePhaseSchema),
         })

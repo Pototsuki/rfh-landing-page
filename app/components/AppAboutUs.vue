@@ -6,6 +6,13 @@ const sectionRef = ref<HTMLElement | null>(null);
 const inView = ref(false);
 const imageLoaded = ref(false);
 
+const { locale } = useI18n();
+
+const { data: page } = await useAsyncData(
+  () => queryCollection("index").where("locale", "=", locale.value).first(),
+  { watch: [locale] },
+);
+
 useIntersectionObserver(
   sectionRef,
   (entries) => {
@@ -31,11 +38,14 @@ useIntersectionObserver(
 
     <!-- CONTENT -->
     <UContainer>
-      <UPageSection
-        title="What We Do"
-        description="Remote For Hive helps companies and institutions access Virtual Assistants with role-specific expertise, delivered through a structured, community-based system."
-        orientation="horizontal"
-      >
+      <UPageSection title="What We Do" orientation="horizontal">
+        <template #title>
+          <h2
+            class="text-3xl sm:text-4xl lg:text-6xl text-pretty font-black text-primary-500"
+          >
+            {{ page?.about_us.title }}
+          </h2>
+        </template>
         <!-- LEFT / TEXT -->
         <template #description>
           <Motion
@@ -53,9 +63,7 @@ useIntersectionObserver(
               ></span>
 
               <p class="text-lg text-primary-text">
-                Remote For Hive helps companies and institutions access Virtual
-                Assistants with role-specific expertise, delivered through a
-                structured, community-based system.
+                {{ page?.about_us.description }}
               </p>
 
               <!-- Statement -->
@@ -71,7 +79,7 @@ useIntersectionObserver(
                 <p
                   class="font-black bg-linear-to-r text-xl lg:text-3xl from-primary-300 via-primary-500 to-primary-700 bg-clip-text text-transparent drop-shadow-sm"
                 >
-                  We do not simply place VAs.
+                  {{ page?.about_us.remarks }}
                 </p>
               </Motion>
 
@@ -86,9 +94,7 @@ useIntersectionObserver(
                 }"
               >
                 <p class="text-base text-muted-foreground max-w-xl">
-                  We design training programs, curate top talent, and provide
-                  ongoing supervision to ensure every Virtual Assistant is
-                  aligned with your workflows, SOPs, and business goals.
+                  {{ page?.about_us.description_2 }}
                 </p>
               </Motion>
             </div>

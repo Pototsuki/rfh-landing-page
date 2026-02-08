@@ -75,10 +75,16 @@ const cards = [
 
     <UContainer>
       <UPageSection
-        title="VA Specialization Tracks"
         description="Remote For Hive provides function-based Virtual Assistants, not one-size-fits-all support.
 Available Specializations:"
       >
+        <template #title>
+          <h2
+            class="text-3xl sm:text-4xl lg:text-5xl text-pretty tracking-tight font-bold text-secondary-500"
+          >
+            VA Specialization Tracks
+          </h2>
+        </template>
         <Motion
           :initial="{ opacity: 0, y: 16 }"
           :animate="{ opacity: inView ? 1 : 0, y: inView ? 0 : 16 }"
@@ -87,13 +93,18 @@ Available Specializations:"
           <UPageGrid
             class="grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr"
           >
-            <UCard v-for="(card, i) in cards" :key="i" :class="card.class">
+            <UCard
+              v-for="(card, i) in cards"
+              :key="i"
+              :class="['group transition-all duration-300', card.class]"
+            >
               <div class="flex flex-col gap-3">
                 <h3
-                  class="font-black bg-linear-to-r from-primary-300 via-primary-500 to-primary-700 bg-clip-text text-transparent drop-shadow-sm"
+                  class="font-black bg-linear-to-r from-secondary-200 to-secondary-900 bg-clip-text text-transparent drop-shadow-sm transition-all duration-300 group-hover:from-primary-200 group-hover:to-primary-900"
                 >
                   {{ card.title }}
                 </h3>
+
                 <p class="text-lg">
                   {{ card.description }}
                 </p>

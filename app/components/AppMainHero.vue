@@ -52,11 +52,11 @@ const { data: page } = await useAsyncData(
               }"
             >
               <h1
-                class="text-4xl lg:text-6xl font-black leading-snug text-primary-text"
+                class="text-3xl sm:text-4xl lg:text-6xl text-pretty font-black leading-snug text-primary-text"
               >
                 {{ page?.hero.title_parts[0] }}
                 <span
-                  class="font-black bg-linear-to-r from-primary-300 via-primary-500 to-primary-700 bg-clip-text text-transparent drop-shadow-sm"
+                  class="font-black bg-linear-to-r from-secondary-500 to-primary-500 bg-clip-text text-transparent drop-shadow-sm"
                 >
                   {{ page?.hero.title_parts[1] }}
                 </span>

@@ -30,8 +30,19 @@ hero:
       color: primary
       target: _blank
 
+about_us:
+  title: What We Do
+  description: Remote For Hive helps companies and institutions access Virtual
+    Assistants with role-specific expertise, delivered through a
+    structured, community-based system.
+  remarks: We do not simply place VAs.
+  description_2: "We design training programs, curate top talent, and provide ongoing supervision to ensure every Virtual Assistant is aligned with your workflows, SOPs, and business goals."
+
 pipeline:
-  title: Talent Readiness Pipeline
+  title_parts:
+    - Talent
+    - Readiness
+    - Pipeline
   description: >
     Every talent goes through the same core pipeline, then enters
     role-specific training based on partner needs.

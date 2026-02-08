@@ -24,10 +24,20 @@ useIntersectionObserver(
 <template>
   <section ref="sectionRef" class="relative py-24 overflow-hidden">
     <UContainer>
-      <UPageSection
-        :title="page?.pipeline?.title"
-        :description="page?.pipeline?.description"
-      >
+      <UPageSection :description="page?.pipeline?.description">
+        <template #title>
+          <h2
+            class="text-3xl sm:text-4xl lg:text-5xl text-pretty tracking-tight font-bold text-primary-text"
+          >
+            {{ page?.pipeline?.title_parts[0] }}
+            {{ page?.pipeline?.title_parts[1] }}
+            <span
+              class="bg-linear-to-r from-secondary-500 to-primary-500 bg-clip-text text-transparent drop-shadow-sm"
+            >
+              {{ page?.pipeline?.title_parts[2] }}
+            </span>
+          </h2>
+        </template>
         <!-- ================= MOBILE / TABLET ================= -->
         <div class="mx-auto max-w-md lg:hidden">
           <div

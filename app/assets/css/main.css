@@ -50,24 +50,27 @@
   --color-primary-900: #5a420c;
   --color-primary-950: #3a2a08;
 
-  /* =======================================================
-     SECONDARY — Info / Accent / Support (Cyan)
-     -------------------------------------------------------
-     Usage:
-     - Icons, info badges, secondary actions
-     - Links or highlights that are not primary CTAs
-     ======================================================= */
-  --color-secondary-50: #ecfeff;
-  --color-secondary-100: #cffafe;
-  --color-secondary-200: #a5f3fc;
-  --color-secondary-300: #67e8f9; /* text small / safe contrast */
-  --color-secondary-400: #38bdf8;
-  --color-secondary-500: #0ea5e9; /* DEFAULT */
-  --color-secondary-600: #0284c7; /* hover */
-  --color-secondary-700: #0369a1;
-  --color-secondary-800: #075985;
-  --color-secondary-900: #0c4a6e;
-  --color-secondary-950: #082f49;
+/* =======================================================
+   SECONDARY — Tosca / Teal (Fresh, Modern, Friendly)
+   Base color: #2DD4BF
+   -------------------------------------------------------
+   Usage:
+   - Icons, info badges, highlights
+   - Secondary actions
+   - Decorative accents (NOT main CTA)
+   ======================================================= */
+
+   --color-secondary-50:  #ecfdfb;
+   --color-secondary-100: #d1faf5;
+   --color-secondary-200: #99f6e4;
+   --color-secondary-300: #5eead4; /* subtle text / icon */
+   --color-secondary-400: #2dd4bf; /* BASE */
+   --color-secondary-500: #14b8a6; /* DEFAULT */
+   --color-secondary-600: #0d9488; /* hover / active */
+   --color-secondary-700: #0f766e;
+   --color-secondary-800: #115e59;
+   --color-secondary-900: #134e4a;
+   --color-secondary-950: #042f2e;
 
   /* =======================================================
      BACKGROUND — Re-anchored scale
