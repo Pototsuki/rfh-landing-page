@@ -71,6 +71,80 @@ const isPrimary = (index: number) => index % 2 === 0;
           </h2>
         </template>
 
+        <!-- ================= MOBILE / TABLET ================= -->
+        <div class="mx-auto max-w-md space-y-10 lg:hidden">
+          <div
+            v-for="(item, index) in page?.pipeline?.phases"
+            :key="index"
+            class="relative flex flex-col items-center"
+          >
+            <!-- DOT -->
+            <div class="relative mb-4 flex items-center justify-center">
+              <div
+                class="absolute h-12 w-12 rounded-full blur-md"
+                :class="
+                  isPrimary(index) ? 'bg-primary-400/25' : 'bg-secondary-400/25'
+                "
+              />
+              <div
+                class="relative flex h-8 w-8 items-center justify-center rounded-full text-background-900"
+                :class="
+                  isPrimary(index) ? 'bg-primary-400' : 'bg-secondary-400'
+                "
+              >
+                <UIcon
+                  v-if="item.icon"
+                  :name="`i-lucide-${item.icon}`"
+                  class="h-4 w-4"
+                />
+              </div>
+            </div>
+
+            <!-- CARD -->
+            <UCard
+              class="w-full text-center transition-all duration-500 bg-background-800/80 border border-white/5"
+              :class="
+                isPrimary(index)
+                  ? 'hover:border-primary-400/30'
+                  : 'hover:border-secondary-400/30'
+              "
+            >
+              <div class="space-y-2">
+                <span
+                  class="text-xs font-semibold tracking-widest"
+                  :class="
+                    isPrimary(index) ? 'text-primary-400' : 'text-secondary-400'
+                  "
+                >
+                  {{ item.phase }}
+                </span>
+
+                <h3
+                  class="text-lg font-bold font-playfair italic"
+                  :class="
+                    isPrimary(index) ? 'text-primary-400' : 'text-secondary-400'
+                  "
+                >
+                  {{ item.title }}
+                </h3>
+
+                <p class="text-sm opacity-80">
+                  {{ item.description }}
+                </p>
+              </div>
+            </UCard>
+
+            <!-- CONNECTOR -->
+            <div
+              v-if="index !== page!.pipeline!.phases.length - 1"
+              class="mt-6 h-10 w-px"
+              :class="
+                isPrimary(index) ? 'bg-primary-400/40' : 'bg-secondary-400/40'
+              "
+            />
+          </div>
+        </div>
+
         <!-- ================= DESKTOP ================= -->
         <div class="relative mx-auto hidden max-w-7xl space-y-28 lg:block">
           <!-- AXIS -->
