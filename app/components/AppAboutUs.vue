@@ -120,13 +120,13 @@ useIntersectionObserver(
           >
             <!-- AMBIENT GLOW -->
             <div
-              class="pointer-events-none absolute -inset-16 rounded-[48px] bg-primary-500/15 blur-[80px]"
+              class="pointer-events-none absolute -inset-16 rounded-[48px] bg-secondary-500/15 blur-[80px]"
               aria-hidden="true"
             ></div>
 
             <!-- CORE GLOW -->
             <div
-              class="pointer-events-none absolute -inset-6 rounded-4xl bg-primary-400/20 blur-3xl"
+              class="pointer-events-none absolute -inset-6 rounded-4xl bg-secondary-400/20 blur-3xl"
               aria-hidden="true"
             ></div>
 

@@ -6,12 +6,6 @@ const linkSchema = z.object({
   target: z.string().optional(),
 });
 
-const featureSchema = z.object({
-  title: z.string(),
-  description: z.string(),
-  icon: z.string(),
-});
-
 const faqItemSchema = z.object({
   question: z.string(),
   answer: z.string(),
@@ -62,10 +56,19 @@ export const collections = {
         description_2: z.string(),
       }),
 
-      features: z
+      va_specializations: z
         .object({
           title: z.string(),
-          items: z.array(featureSchema),
+          description: z.string(),
+          items: z.array(
+            z.object({
+              title: z.string(),
+              description: z.string(),
+              class: z.string().optional(),
+              featured: z.boolean().optional(),
+              vector: z.string().optional(), // 👈 TAMBAHKAN INI
+            }),
+          ),
         })
         .optional(),
 

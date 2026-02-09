@@ -2,89 +2,88 @@
 import { ref } from "vue";
 import { useIntersectionObserver } from "@vueuse/core";
 
+/* =========================================================
+   VECTOR IMPORTS
+   ========================================================= */
+import AdminVector from "./images/AdminVector.vue";
+import HRVector from "./images/HRVector.vue";
+import SupportVector from "./images/SupportVector.vue";
+import OperationsVector from "./images/OperationsVector.vue";
+import SocialVector from "./images/SocialVector.vue";
+import LeadVector from "./images/LeadVector.vue";
+import DataVector from "./images/DataVector.vue";
+import CustomVector from "./images/CustomVector.vue";
+
+/* =========================================================
+   VECTOR TYPES
+   ========================================================= */
+type VectorKey =
+  | "AdminVector"
+  | "HRVector"
+  | "SupportVector"
+  | "OperationsVector"
+  | "SocialVector"
+  | "LeadVector"
+  | "DataVector"
+  | "CustomVector";
+
+const vectors: Record<VectorKey, unknown> = {
+  AdminVector,
+  HRVector,
+  SupportVector,
+  OperationsVector,
+  SocialVector,
+  LeadVector,
+  DataVector,
+  CustomVector,
+};
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+const { locale } = useI18n();
+
+const { data: page } = await useAsyncData(
+  () => queryCollection("index").where("locale", "=", locale.value).first(),
+  { watch: [locale] },
+);
+
+/* =========================================================
+   INTERSECTION
+   ========================================================= */
 const sectionRef = ref<HTMLElement | null>(null);
 const inView = ref(false);
 
 useIntersectionObserver(
   sectionRef,
-  (entries) => {
-    const entry = entries[0];
-    if (entry?.isIntersecting) {
-      inView.value = true;
-    }
+  ([entry]) => {
+    if (entry?.isIntersecting) inView.value = true;
   },
   { threshold: 0.3 },
 );
-
-const cards = [
-  {
-    title: "Administrative",
-    description:
-      "Executive-level support including calendar mastery, complex travel logistics, and inbox zero management.",
-    class: "lg:col-span-2 lg:row-span-2 text-3xl!",
-  },
-  {
-    title: "HR & Recruitment",
-    description: "End-to-end talent sourcing and compliance.",
-    class: "text-2xl",
-  },
-  {
-    title: "Customer Support",
-    description: "Ticketing systems and CSAT excellence.",
-    class: "text-2xl",
-  },
-  {
-    title: "Operations",
-    description:
-      "Standardizing workflows, process optimization, and CRM management for scaling teams.",
-    class: "lg:row-span-2 text-2xl",
-  },
-  {
-    title: "Social Media",
-    description:
-      "Content scheduling, community engagement, and trend monitoring across all platforms.",
-    class: "text-2xl",
-  },
-  {
-    title: "Lead Generation",
-    description: "Strategic outbound outreach and pipeline building.",
-    class: "text-2xl",
-  },
-  {
-    title: "Data Annotation",
-    description: "High-accuracy AI training and labeling.",
-    class: "text-2xl",
-  },
-  {
-    title: "Custom Roles",
-    description:
-      "Tailored to Partner SOPs. We build bespoke workflows and specialized training modules exclusively for your unique business requirements.",
-    class: "text-2xl",
-  },
-];
 </script>
 
 <template>
   <section ref="sectionRef" class="relative overflow-hidden">
-    <!-- RIGHT SMALL BLURRED GRADIENT -->
+    <!-- AMBIENT BACKGROUND -->
     <div class="pointer-events-none absolute inset-0 -z-10">
       <div
-        class="absolute top-1/2 -right-16 h-80 w-80 -translate-y-1/2 rounded-full bg-primary-400/30 blur-3xl"
-      ></div>
+        class="absolute top-1/2 -right-24 h-96 w-96 -translate-y-1/2 rounded-full bg-primary-400/20 blur-3xl"
+      />
     </div>
 
     <UContainer>
-      <UPageSection
-        description="Remote For Hive provides function-based Virtual Assistants, not one-size-fits-all support.
-Available Specializations:"
-      >
+      <UPageSection :description="page?.va_specializations?.description">
+        <!-- TITLE -->
         <template #title>
           <h2
             class="text-3xl sm:text-4xl lg:text-5xl text-pretty tracking-tight font-bold text-secondary-500 font-playfair"
           >
-            VA Specialization Tracks
+            {{ page?.va_specializations?.title }}
           </h2>
         </template>
+
+        <!-- GRID -->
         <Motion
           :initial="{ opacity: 0, y: 16 }"
           :animate="{ opacity: inView ? 1 : 0, y: inView ? 0 : 16 }"
@@ -93,14 +92,56 @@ Available Specializations:"
           <UPageGrid
             class="grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr"
           >
+            <!-- CARD -->
             <UCard
-              v-for="(card, i) in cards"
+              v-for="(card, i) in page?.va_specializations?.items"
               :key="i"
-              :class="['group transition-all duration-300', card.class]"
+              :class="[
+                /* BASE */
+                'group relative overflow-hidden transition-all duration-500 ease-out',
+                'bg-background-800/80',
+                'border border-white/5',
+
+                /* HOVER (OPTIONAL, SAFE) */
+                'hover:-translate-y-1',
+                'hover:bg-background-800',
+                'hover:border-primary-400/30',
+                'hover:shadow-[0_30px_80px_-30px_rgba(0,0,0,0.6)]',
+
+                /* CONTENT */
+                card.class,
+                card.featured && 'pb-16 lg:pb-24',
+              ]"
             >
-              <div class="flex flex-col gap-3">
+              <!-- INNER GLOW (OPTIONAL) -->
+              <div
+                class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              >
+                <div
+                  class="absolute -bottom-24 -right-24 w-72 h-72 rounded-full bg-primary-400/20 blur-3xl"
+                />
+              </div>
+
+              <!-- VECTOR BACKGROUND (OPTIONAL) -->
+              <div
+                v-if="card.vector && vectors[card.vector as VectorKey]"
+                class="pointer-events-none absolute bottom-0 right-0 z-0 w-44 h-44 sm:w-52 sm:h-52 lg:w-64 lg:h-64 xl:w-72 xl:h-72"
+              >
+                <component
+                  :is="vectors[card.vector as VectorKey]"
+                  class="w-full h-full text-primary-400 transition-all duration-700 group-hover:scale-110 group-hover:rotate-[1deg]"
+                  :class="
+                    card.featured
+                      ? 'opacity-45'
+                      : 'opacity-30 group-hover:opacity-45'
+                  "
+                />
+              </div>
+
+              <!-- CONTENT -->
+              <div class="relative z-10 flex flex-col gap-3">
                 <h3
-                  class="font-black bg-linear-to-r from-secondary-200 to-secondary-900 bg-clip-text text-transparent drop-shadow-sm transition-all duration-300 group-hover:from-primary-200 group-hover:to-primary-900"
+                  class="font-black bg-linear-to-r from-secondary-200 to-secondary-900 bg-clip-text text-transparent drop-shadow-sm transition-all duration-500 group-hover:from-primary-200 group-hover:to-primary-500"
                 >
                   {{ card.title }}
                 </h3>
