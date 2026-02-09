@@ -30,8 +30,75 @@ hero:
       color: primary
       target: _blank
 
+about_us:
+  title: What We Do
+  description: Remote For Hive helps companies and institutions access Virtual
+    Assistants with role-specific expertise, delivered through a
+    structured, community-based system.
+  remarks: We do not simply place VAs.
+  description_2: "We design training programs, curate top talent, and provide ongoing supervision to ensure every Virtual Assistant is aligned with your workflows, SOPs, and business goals."
+
+
+va_specializations:
+  title: VA Specialization Tracks
+  description: >
+    Remote For Hive provides function-based Virtual Assistants, not one-size-fits-all support.
+    Available Specializations:
+
+  items:
+    - title: Administrative
+      description: >
+        Executive-level support including calendar mastery, complex travel logistics,
+        and inbox zero management.
+      class: lg:col-span-2 lg:row-span-3 text-3xl
+      featured: true
+      vector: AdminVector
+
+    - title: HR & Recruitment
+      description: End-to-end talent sourcing and compliance.
+      class: text-2xl
+      vector: HRVector
+
+    - title: Customer Support
+      description: Ticketing systems and CSAT excellence.
+      class: text-2xl
+      vector: SupportVector
+
+    - title: Operations
+      description: >
+        Standardizing workflows, process optimization, and CRM management
+        for scaling teams.
+      class: lg:row-span-2 text-2xl
+      vector: OperationsVector
+
+    - title: Social Media
+      description: >
+        Content scheduling, community engagement, and trend monitoring
+        across all platforms.
+      class: text-2xl
+      vector: SocialVector
+
+    - title: Lead Generation
+      description: Strategic outbound outreach and pipeline building.
+      class: text-2xl
+      vector: LeadVector
+
+    - title: Data Annotation
+      description: High-accuracy AI training and labeling.
+      class: text-2xl
+      vector: DataVector
+
+    - title: Custom Roles
+      description: >
+        Tailored to Partner SOPs. We build bespoke workflows and specialized
+        training modules exclusively for your unique business requirements.
+      class: text-2xl
+      vector: CustomVector
 pipeline:
-  title: Talent Readiness Pipeline
+  title_parts:
+    - Talent
+    - Readiness
+    - Pipeline
   description: >
     Every talent goes through the same core pipeline, then enters
     role-specific training based on partner needs.
