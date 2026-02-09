@@ -26,7 +26,34 @@ const isPrimary = (index: number) => index % 2 === 0;
 </script>
 
 <template>
-  <section ref="sectionRef" class="relative py-28 overflow-hidden">
+  <section
+    ref="sectionRef"
+    class="relative py-28 overflow-hidden bg-background-900/40"
+  >
+    <!-- ================= BACKGROUND DECORATION ================= -->
+    <div
+      class="pointer-events-none absolute inset-0 -z-10 overflow-hidden motion-safe:animate-pulse-slow"
+    >
+      <!-- LEFT AMBIENT GLOW -->
+      <div
+        class="absolute -top-40 -left-40 h-130 w-130 rounded-full bg-primary-500/15 blur-[140px]"
+      />
+
+      <!-- RIGHT AMBIENT GLOW -->
+      <div
+        class="absolute top-1/3 -right-40 h-130 w-130 rounded-full bg-secondary-500/15 blur-[140px]"
+      />
+
+      <!-- CENTER RADIAL FOCUS -->
+      <div
+        class="absolute left-1/2 top-1/2 h-200 w-200 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary-400/10 blur-[180px]"
+      />
+
+      <!-- SUBTLE GRID -->
+      <div
+        class="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:64px_64px]"
+      />
+    </div>
     <UContainer>
       <UPageSection :description="page?.pipeline?.description">
         <!-- TITLE -->
