@@ -59,12 +59,12 @@ const isPrimary = (index: number) => index % 2 === 0;
         <!-- TITLE -->
         <template #title>
           <h2
-            class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-primary-text"
+            class="font-playfair text-3xl sm:text-4xl lg:text-6xl font-bold tracking-tight text-primary-text"
           >
             {{ page?.pipeline?.title_parts[0] }}
             {{ page?.pipeline?.title_parts[1] }}
             <span
-              class="font-playfair bg-linear-to-r from-secondary-500 to-primary-500 bg-clip-text text-transparent"
+              class="bg-linear-to-r from-secondary-500 to-primary-500 bg-clip-text text-transparent italic leading-[1.2] pr-2"
             >
               {{ page?.pipeline?.title_parts[2] }}
             </span>
@@ -95,7 +95,7 @@ const isPrimary = (index: number) => index % 2 === 0;
                 <UIcon
                   v-if="item.icon"
                   :name="`i-lucide-${item.icon}`"
-                  class="h-4 w-4"
+                  class="h-6 w-6"
                 />
               </div>
             </div>
@@ -179,7 +179,7 @@ const isPrimary = (index: number) => index % 2 === 0;
                   "
                 />
                 <div
-                  class="relative flex h-9 w-9 items-center justify-center rounded-full text-background-900"
+                  class="relative flex h-12 w-12 items-center justify-center rounded-full text-background-900"
                   :class="
                     isPrimary(index) ? 'bg-primary-400' : 'bg-secondary-400'
                   "
@@ -187,7 +187,7 @@ const isPrimary = (index: number) => index % 2 === 0;
                   <UIcon
                     v-if="item.icon"
                     :name="`i-lucide-${item.icon}`"
-                    class="h-4 w-4"
+                    class="h-6 w-6"
                   />
                 </div>
               </div>

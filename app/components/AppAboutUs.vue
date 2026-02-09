@@ -41,7 +41,7 @@ useIntersectionObserver(
       <UPageSection title="What We Do" orientation="horizontal">
         <template #title>
           <h2
-            class="text-3xl sm:text-4xl lg:text-6xl text-pretty font-black text-primary-500"
+            class="text-3xl sm:text-4xl lg:text-6xl text-pretty font-black text-primary-500 font-playfair"
           >
             {{ page?.about_us.title }}
           </h2>

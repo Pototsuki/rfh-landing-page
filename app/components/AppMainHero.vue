@@ -56,7 +56,7 @@ const { data: page } = await useAsyncData(
               >
                 {{ page?.hero.title_parts[0] }}
                 <span
-                  class="text-4xl sm:text-5xl lg:text-6xl bg-linear-to-r from-secondary-500 to-primary-500 bg-clip-text text-transparent drop-shadow-sm font-playfair italic"
+                  class="text-3xl sm:text-4xl lg:text-5xl bg-linear-to-r from-secondary-500 to-primary-500 bg-clip-text text-transparent drop-shadow-sm font-playfair italic"
                 >
                   {{ page?.hero.title_parts[1] }}
                 </span>
@@ -75,7 +75,7 @@ const { data: page } = await useAsyncData(
               }"
             >
               <p
-                class="mt-4 text-lg lg:text-2xl text-primary-text font-semibold"
+                class="mt-4 text-lg md:text-xl text-primary-text font-semibold"
               >
                 {{ page?.hero.subtitle }}
               </p>
