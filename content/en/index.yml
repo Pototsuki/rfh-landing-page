@@ -107,36 +107,42 @@ pipeline:
     - phase: PHASE 01
       title: Talent Foundation
       description: >
-        Lay the groundwork by mastering essential VA tools, digital literacy,
-        and professional communication protocols.
+        Establish core competencies in Virtual Assistant tools,
+        remote work discipline, and professional communication standards.
       side: left
+      icon: user-check
 
     - phase: PHASE 02
       title: Skill Specialization
       description: >
-        Deep dive into high-value niches. From Social Media Management to
-        Executive Administration.
+        Focused training in role-specific workflows,
+        tools, and real operational scenarios aligned with partner needs.
       side: right
+      icon: layers
 
     - phase: PHASE 03
       title: Performance Validation
       description: >
-        Build a compelling body of work with real-world project samples.
+        Hands-on assessments to validate accuracy,
+        consistency, and readiness for real-world execution.
       side: left
+      icon: check-circle
 
     - phase: PHASE 04
-      title: Client Readiness Simulation
+      title: Client Readiness
       description: >
-        Prepare for the global stage. Interview coaching, resume optimization,
-        and networking strategies.
+        Interview preparation, communication alignment,
+        and onboarding readiness for international collaboration.
       side: right
+      icon: briefcase
 
     - phase: PHASE 05
       title: Deployment & Monitoring
       description: >
-        Secure your first international client and transition into a life of
-        location independence.
+        Structured deployment with ongoing performance monitoring
+        and continuous operational support.
       side: left
+      icon: rocket
 
 faq:
   title: Frequently Asked Questions
