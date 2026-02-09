@@ -56,7 +56,7 @@ const { data: page } = await useAsyncData(
               >
                 {{ page?.hero.title_parts[0] }}
                 <span
-                  class="font-black bg-linear-to-r from-secondary-500 to-primary-500 bg-clip-text text-transparent drop-shadow-sm"
+                  class="font-black bg-linear-to-r from-secondary-500 to-primary-500 bg-clip-text text-transparent drop-shadow-sm font-playfair italic"
                 >
                   {{ page?.hero.title_parts[1] }}
                 </span>

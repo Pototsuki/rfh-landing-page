@@ -80,7 +80,7 @@ Available Specializations:"
       >
         <template #title>
           <h2
-            class="text-3xl sm:text-4xl lg:text-5xl text-pretty tracking-tight font-bold text-secondary-500"
+            class="text-3xl sm:text-4xl lg:text-5xl text-pretty tracking-tight font-bold text-secondary-500 font-playfair"
           >
             VA Specialization Tracks
           </h2>

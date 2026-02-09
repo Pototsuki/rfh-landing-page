@@ -32,7 +32,7 @@ useIntersectionObserver(
             {{ page?.pipeline?.title_parts[0] }}
             {{ page?.pipeline?.title_parts[1] }}
             <span
-              class="bg-linear-to-r from-secondary-500 to-primary-500 bg-clip-text text-transparent drop-shadow-sm"
+              class="bg-linear-to-r from-secondary-500 to-primary-500 bg-clip-text text-transparent drop-shadow-sm font-playfair"
             >
               {{ page?.pipeline?.title_parts[2] }}
             </span>

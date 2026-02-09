@@ -103,40 +103,51 @@ useIntersectionObserver(
 
         <!-- RIGHT / IMAGE -->
         <Motion
-          :initial="{ opacity: 0, y: 40 }"
+          :initial="{ opacity: 0, x: 80 }"
           :animate="{
             opacity: inView && imageLoaded ? 1 : 0,
-            y: inView && imageLoaded ? 0 : 40,
+            x: inView && imageLoaded ? 0 : 80,
           }"
           :transition="{
-            delay: 0.1,
-            duration: 0.8,
+            delay: 0.15,
+            duration: 0.9,
             ease: [0.22, 1, 0.36, 1],
           }"
         >
           <div
-            class="relative mt-10 lg:mt-0 w-full lg:w-auto flex justify-center"
+            class="relative mt-10 lg:mt-0 flex justify-center"
+            style="perspective: 1200px"
           >
-            <!-- Image glow -->
+            <!-- AMBIENT GLOW -->
             <div
-              class="absolute -inset-6 rounded-3xl bg-primary-600/10 blur-2xl"
+              class="pointer-events-none absolute -inset-16 rounded-[48px] bg-primary-500/15 blur-[80px]"
               aria-hidden="true"
             ></div>
 
-            <!-- Frame -->
+            <!-- CORE GLOW -->
             <div
-              class="relative border-2 border-primary-800 rounded-2xl w-full max-w-lg lg:max-w-none"
+              class="pointer-events-none absolute -inset-6 rounded-4xl bg-primary-400/20 blur-3xl"
+              aria-hidden="true"
+            ></div>
+
+            <!-- Tilted frame -->
+            <div
+              class="relative transform-gpu rotate-2 -skew-y-1 transition-transform duration-700 ease-out hover:rotate-3 hover:skew-y-0"
             >
-              <NuxtImg
-                src="https://s29814.pcdn.co/wp-content/uploads/2022/11/shutterstock_1477336820.jpg.optimal.jpg"
-                alt="about-us-what-we-do"
-                format="webp"
-                sizes="(max-width: 1024px) 90vw, 704px"
-                preload
-                loading="eager"
-                class="relative top-2 left-2 sm:top-3 sm:left-3 lg:top-8 lg:left-8 w-full max-h-96 object-cover rounded-xl shadow-2xl"
-                @load="imageLoaded = true"
-              />
+              <div
+                class="relative border-2 border-primary-700/70 rounded-2xl bg-background-800 shadow-[0_40px_120px_-40px_rgba(0,0,0,0.6)]"
+              >
+                <NuxtImg
+                  src="https://s29814.pcdn.co/wp-content/uploads/2022/11/shutterstock_1477336820.jpg.optimal.jpg"
+                  alt="about-us-what-we-do"
+                  format="webp"
+                  sizes="(max-width: 1024px) 90vw, 704px"
+                  preload
+                  loading="eager"
+                  class="relative top-3 right-3 lg:top-6 lg:right-6 w-full max-h-96 object-cover rounded-xl shadow-2xl"
+                  @load="imageLoaded = true"
+                />
+              </div>
             </div>
           </div>
         </Motion>

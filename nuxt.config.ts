@@ -57,6 +57,12 @@ export default defineNuxtConfig({
         weights: [300, 400, 500, 600, 700, 800],
         styles: ["normal"],
       },
+      {
+        name: "Playfair Display",
+        provider: "google",
+        weights: [300, 400, 500, 600, 700, 800],
+        styles: ["normal"],
+      },
     ],
   },
 
