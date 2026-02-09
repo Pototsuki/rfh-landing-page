@@ -66,7 +66,7 @@ export const collections = {
               description: z.string(),
               class: z.string().optional(),
               featured: z.boolean().optional(),
-              vector: z.string().optional(), // 👈 TAMBAHKAN INI
+              vector: z.string().optional(),
             }),
           ),
         })
@@ -78,6 +78,7 @@ export const collections = {
           title_parts: z.array(z.string()),
           description: z.string().optional(),
           phases: z.array(pipelinePhaseSchema),
+          icon: z.string().optional(),
         })
         .optional(),
 
