@@ -77,7 +77,7 @@ useIntersectionObserver(
         <!-- TITLE -->
         <template #title>
           <h2
-            class="text-3xl sm:text-4xl lg:text-5xl text-pretty tracking-tight font-bold text-secondary-500 font-playfair"
+            class="text-3xl sm:text-4xl lg:text-6xl text-pretty tracking-tight font-bold text-secondary-500 font-playfair"
           >
             {{ page?.va_specializations?.title }}
           </h2>
@@ -146,7 +146,7 @@ useIntersectionObserver(
                   {{ card.title }}
                 </h3>
 
-                <p class="text-lg">
+                <p class="text-base lg:text-lg">
                   {{ card.description }}
                 </p>
               </div>

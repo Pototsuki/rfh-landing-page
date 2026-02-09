@@ -24,7 +24,7 @@ const { data: pageContent } = await useAsyncData(
         size="md"
         variant="solid"
         :label="pageContent?.header?.button.join_now"
-        class="hover:bg-primary-900 p-3 px-5 bg-background-800 tracking-wide"
+        class="hover:bg-primary-900 p-3 px-5 bg-linear-to-r from-secondary-500 to-primary-500 bg-clip-text text-transparent drop-shadow-sm"
       />
     </template>
 
