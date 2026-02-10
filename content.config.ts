@@ -82,6 +82,52 @@ export const collections = {
         })
         .optional(),
 
+      ecosystem: z
+        .object({
+          title: z.string().optional(),
+          description: z.string().optional(),
+          items: z.array(
+            z.object({
+              title: z.string(),
+              description: z.string(),
+              class: z.string().optional(),
+              featured: z.boolean().optional(),
+              vector: z.string().optional(),
+            }),
+          ),
+        })
+        .optional(),
+
+      collaboration_models: z
+        .object({
+          title: z.string().optional(),
+          description: z.string().optional(),
+          items: z.array(
+            z.object({
+              title: z.string(),
+              description: z.string(),
+              class: z.string().optional(),
+              featured: z.boolean().optional(),
+              vector: z.string().optional(),
+            }),
+          ),
+        })
+        .optional(),
+
+      collaboration_usecase: z
+        .object({
+          title: z.string().optional(),
+          description: z.string().optional(),
+
+          items: z.array(
+            z.object({
+              title: z.string(),
+              points: z.array(z.string()),
+            }),
+          ),
+        })
+        .optional(),
+
       faq: z
         .object({
           title: z.string().optional(),

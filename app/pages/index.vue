@@ -15,6 +15,7 @@ useSeoMeta({
     <AppAboutUs></AppAboutUs>
     <AppSpecialization></AppSpecialization>
     <AppPipeline></AppPipeline>
+    <AppCoreEcosystem></AppCoreEcosystem>
     <AppFaq></AppFaq>
     <USeparator color="primary"></USeparator>
     <AppCtaFooter></AppCtaFooter>
