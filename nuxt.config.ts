@@ -27,7 +27,7 @@ export default defineNuxtConfig({
   },
 
   i18n: {
-    defaultLocale: "id",
+    defaultLocale: "en",
     locales: [
       { code: "en", name: "English" },
       { code: "id", name: "Indonesia" },
@@ -37,7 +37,7 @@ export default defineNuxtConfig({
       useCookie: true,
       cookieKey: "lang",
       alwaysRedirect: false,
-      fallbackLocale: "id",
+      fallbackLocale: "en",
     },
   },
 
