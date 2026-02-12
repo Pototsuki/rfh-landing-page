@@ -14,7 +14,7 @@ export default defineNuxtConfig({
     "motion-v/nuxt",
   ],
 
-  ssr: false,
+  ssr: true,
 
   devtools: {
     enabled: true,
@@ -64,12 +64,6 @@ export default defineNuxtConfig({
         styles: ["normal"],
       },
     ],
-  },
-
-  content: {
-    database: {
-      type: "pglite",
-    },
   },
 
   compatibilityDate: "2025-01-15",

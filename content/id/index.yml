@@ -1,231 +1,225 @@
 locale: id
 
 seo:
-  title: Premium Virtual Assistants More Time and Freedom
+  title: Asisten Virtual Premium — Lebih Banyak Waktu dan Kebebasan
   description: Platform SaaS untuk membangun produk lebih cepat dan efisien.
 
 header:
   button:
-    join_now: Join Now
+    join_now: Gabung Sekarang
 
 hero:
   title_parts:
-    - Build
-    - Remote Teams
-    - You Can Trust.
-  highlight: Remote Teams
-  subtitle: Remote For Hive is a curated talent ecosystem. We train, vet, and deploy Virtual Assistants aligned with your business standards.
-  supporting: From general support to role-specific specialists — built for real operational needs.
+    - Bangun
+    - Tim Remote
+    - yang Bisa Anda Percayai.
+  highlight: Tim Remote
+  subtitle: Remote For Hive adalah ekosistem talenta terkurasi. Kami melatih, menyeleksi, dan menempatkan Virtual Assistant yang selaras dengan standar bisnis Anda.
+  supporting: Dari dukungan umum hingga spesialis berbasis peran — dirancang untuk kebutuhan operasional nyata.
   cta:
-    - label: Start a Partnership
+    - label: Mulai Kemitraan
       to: /idk
       color: primary
       target: _blank
-    - label: Build a Custom VA Program
+    - label: Bangun Program VA Kustom
       to: /idk
       color: primary
       target: _blank
-    - label: Request Talent Deck
+    - label: Minta Talent Deck
       to: /idk
       color: primary
       target: _blank
 
 about_us:
-  title: What We Do
-  description: Remote For Hive helps companies and institutions access Virtual
-    Assistants with role-specific expertise, delivered through a
-    structured, community-based system.
-  remarks: We do not simply place VAs.
-  description_2: "We design training programs, curate top talent, and provide ongoing supervision to ensure every Virtual Assistant is aligned with your workflows, SOPs, and business goals."
+  title: Apa yang Kami Lakukan
+  description: Remote For Hive membantu perusahaan dan institusi mengakses Virtual Assistant dengan keahlian spesifik sesuai peran, yang disediakan melalui sistem terstruktur berbasis komunitas.
+  remarks: Kami tidak hanya menempatkan VA.
+  description_2: Kami merancang program pelatihan, mengkurasi talenta terbaik, dan menyediakan supervisi berkelanjutan untuk memastikan setiap Virtual Assistant selaras dengan workflow, SOP, dan tujuan bisnis Anda.
 
 va_specializations:
-  title: VA Specialization Tracks
+  title: Jalur Spesialisasi VA
   description: >
-    Remote For Hive provides function-based Virtual Assistants, not one-size-fits-all support.
-    Available Specializations:
-
+    Remote For Hive menyediakan Virtual Assistant berbasis fungsi, bukan dukungan satu model untuk semua.
+    Spesialisasi yang tersedia:
   items:
-    - title: Administrative
+    - title: Administratif
       description: >
-        Executive-level support including calendar mastery, complex travel logistics,
-        and inbox zero management.
+        Dukungan tingkat eksekutif termasuk manajemen kalender, logistik perjalanan kompleks,
+        dan pengelolaan inbox hingga rapi.
       class: lg:col-span-2 lg:row-span-3 text-xl md:text-2xl lg:text-3xl
       featured: true
       vector: AdminVector
 
-    - title: HR & Recruitment
-      description: End-to-end talent sourcing and compliance.
+    - title: HR & Rekrutmen
+      description: Proses sourcing talenta hingga compliance secara end-to-end.
       class: text-xl lg:text-2xl
       vector: HRVector
 
     - title: Customer Support
-      description: Ticketing systems and CSAT excellence.
+      description: Sistem ticketing dan peningkatan CSAT.
       class: text-xl lg:text-2xl
       vector: SupportVector
 
-    - title: Operations
+    - title: Operasional
       description: >
-        Standardizing workflows, process optimization, and CRM management
-        for scaling teams.
+        Standarisasi workflow, optimasi proses, dan manajemen CRM
+        untuk tim yang berkembang.
       class: lg:row-span-2 text-xl lg:text-2xl
       vector: OperationsVector
 
-    - title: Social Media
+    - title: Media Sosial
       description: >
-        Content scheduling, community engagement, and trend monitoring
-        across all platforms.
+        Penjadwalan konten, engagement komunitas, dan monitoring tren
+        di berbagai platform.
       class: text-xl lg:text-2xl
       vector: SocialVector
 
     - title: Lead Generation
-      description: Strategic outbound outreach and pipeline building.
+      description: Strategi outreach outbound dan pembangunan pipeline.
       class: text-xl lg:text-2xl
       vector: LeadVector
 
     - title: Data Annotation
-      description: High-accuracy AI training and labeling.
+      description: Pelabelan data dan training AI dengan akurasi tinggi.
       class: text-xl lg:text-2xl
       vector: DataVector
 
-    - title: Custom Roles
+    - title: Peran Kustom
       description: >
-        Tailored to Partner SOPs. We build bespoke workflows and specialized
-        training modules exclusively for your unique business requirements.
+        Disesuaikan dengan SOP Partner. Kami membangun workflow khusus dan pelatihan spesialis
+        sesuai kebutuhan bisnis unik Anda.
       class: text-xl lg:text-2xl
       vector: CustomVector
+
 pipeline:
   title_parts:
-    - Talent
-    - Readiness
     - Pipeline
+    - Kesiapan
+    - Talenta
   description: >
-    Every talent goes through the same core pipeline, then enters
-    role-specific training based on partner needs.
+    Setiap talenta melalui pipeline inti yang sama, lalu masuk ke pelatihan
+    spesifik sesuai kebutuhan partner.
 
   phases:
-    - phase: PHASE 01
-      title: Talent Foundation
+    - phase: TAHAP 01
+      title: Fondasi Talenta
       description: >
-        Establish core competencies in Virtual Assistant tools,
-        remote work discipline, and professional communication standards.
+        Membangun kompetensi inti dalam tools Virtual Assistant,
+        disiplin kerja remote, dan standar komunikasi profesional.
       side: left
       icon: user-check
 
-    - phase: PHASE 02
-      title: Skill Specialization
+    - phase: TAHAP 02
+      title: Spesialisasi Skill
       description: >
-        Focused training in role-specific workflows,
-        tools, and real operational scenarios aligned with partner needs.
+        Pelatihan terfokus pada workflow spesifik peran,
+        tools, dan skenario operasional nyata sesuai kebutuhan partner.
       side: right
       icon: layers
 
-    - phase: PHASE 03
-      title: Performance Validation
+    - phase: TAHAP 03
+      title: Validasi Performa
       description: >
-        Hands-on assessments to validate accuracy,
-        consistency, and readiness for real-world execution.
+        Assessment langsung untuk memastikan akurasi,
+        konsistensi, dan kesiapan eksekusi dunia nyata.
       side: left
       icon: check-circle
 
-    - phase: PHASE 04
-      title: Client Readiness
+    - phase: TAHAP 04
+      title: Kesiapan Klien
       description: >
-        Interview preparation, communication alignment,
-        and onboarding readiness for international collaboration.
+        Persiapan interview, penyelarasan komunikasi,
+        dan kesiapan onboarding untuk kolaborasi internasional.
       side: right
       icon: briefcase
 
-    - phase: PHASE 05
+    - phase: TAHAP 05
       title: Deployment & Monitoring
       description: >
-        Structured deployment with ongoing performance monitoring
-        and continuous operational support.
+        Penempatan terstruktur dengan monitoring performa
+        berkelanjutan serta dukungan operasional terus-menerus.
       side: left
       icon: rocket
 
 ecosystem:
-  title: Core Ecosystem
-  description: Remote For Hive is built on a multi-layer ecosystem designed for long-term quality and accountability.
-
+  title: Ekosistem Inti
+  description: Remote For Hive dibangun di atas ekosistem multilayer yang dirancang untuk kualitas jangka panjang dan akuntabilitas.
   items:
     - title: Curated Global Intelligence
-      description: Training framework built to meet real operational needs
+      description: Framework pelatihan yang dirancang untuk kebutuhan operasional nyata
 
-    - title: Mentor Network
-      description: Supervision and quality assurance layer
+    - title: Jaringan Mentor
+      description: Lapisan supervisi dan quality assurance
 
     - title: Elite Pipeline
-      description: Pre-vetted talent pool ready for deployment
+      description: Pool talenta yang sudah tervalidasi dan siap deployment
 
-    - title: Community Accountability System
-      description: Continuous peer review, mentor oversight, and performance tracking
+    - title: Sistem Akuntabilitas Komunitas
+      description: Peer review berkelanjutan, pengawasan mentor, dan tracking performa
 
 collaboration_models:
-  title: Collaboration Models
-  description: Flexible engagement models designed to match different stages of organizational growth.
-
+  title: Model Kolaborasi
+  description: Flexible engagement models yang dirancang untuk berbagai tahap pertumbuhan organisasi.
   items:
-    - title: THE STARTER → Entry-level VA Pool
+    - title: THE STARTER
       description: >
-        Designed for early-stage startups, SMEs, and founders.
-        Provides foundational VA support with basic role specialization.
+        Dirancang untuk startup tahap awal, UMKM, dan founder.
+        Memberikan dukungan VA dasar dengan spesialisasi peran awal.
 
-    - title: THE SPECIALIST → Dedicated Skilled VA
+    - title: THE SPECIALIST
       description: >
-        Built for growing companies and agencies with established workflows.
-        Delivers role-specific Virtual Assistants with faster onboarding and higher autonomy.
+        Dibangun untuk perusahaan berkembang dan agency dengan workflow yang sudah matang.
+        Menyediakan Virtual Assistant spesialis dengan onboarding lebih cepat dan otonomi lebih tinggi.
 
-    - title: THE PARTNER → Co-Created Program / Dedicated Team
+    - title: THE PARTNER
       description: >
-        Designed for companies, campuses, and institutions.
-        We co-create training programs aligned with industry demand, company SOPs,
-        and workforce objectives to produce dedicated, role-ready Virtual Assistants.
+        Dirancang untuk perusahaan, kampus, dan institusi.
+        Kami bersama partner menciptakan program pelatihan sesuai kebutuhan industri,
+        SOP perusahaan, dan tujuan workforce untuk menghasilkan VA yang siap peran.
 
 collaboration_usecase:
-  title: Collaboration Use Cases
-  description: Real-world applications of our collaboration framework across organizations and institutions.
-
+  title: Use Case Kolaborasi
+  description: Aplikasi nyata dari framework kolaborasi kami di berbagai organisasi dan institusi.
   items:
-    - title: Startup & Company Partnerships
+    - title: Kemitraan Startup & Perusahaan
       points:
-        - Role-specific VA deployment
-        - Reduced hiring and training costs
-        - Scalable remote workforce
+        - Deployment VA berbasis peran
+        - Pengurangan biaya hiring dan training
+        - Workforce remote yang scalable
 
-    - title: Campus Partnerships
+    - title: Kemitraan Kampus
       points:
-        - Industry-aligned VA programs
-        - Practical remote work exposure for students
-        - Graduate-ready talent pipelines
+        - Program VA selaras dengan industri
+        - Eksposur kerja remote praktis untuk mahasiswa
+        - Pipeline talenta siap kerja
 
-    - title: Custom Workforce Programs
+    - title: Program Workforce Kustom
       points:
-        - SOP-based training design
-        - Dedicated talent output
-        - Long-term workforce ecosystem development
+        - Desain pelatihan berbasis SOP
+        - Output talenta khusus
+        - Pengembangan ekosistem workforce jangka panjang
 
 faq:
-  title: Frequently Asked Questions
-  description: Everything you need to know about working with Remote For Hive.
+  title: Pertanyaan yang Sering Diajukan
+  description: Semua yang perlu Anda ketahui tentang bekerja dengan Remote For Hive.
   items:
-    - question: What is Remote For Hive?
+    - question: Apa itu Remote For Hive?
       answer: >
-        Remote For Hive is a curated talent ecosystem that trains, vets,
-        and deploys Virtual Assistants aligned with your business standards.
+        Remote For Hive adalah ekosistem talenta terkurasi yang melatih,
+        menyeleksi, dan menempatkan Virtual Assistant sesuai standar bisnis Anda.
 
-    - question: What types of Virtual Assistants do you provide?
+    - question: Jenis Virtual Assistant apa yang tersedia?
       answer: >
-        We provide general Virtual Assistants as well as role-specific
-        specialists such as admin support, operations, customer service,
-        and more.
+        Kami menyediakan Virtual Assistant umum serta spesialis berbasis peran
+        seperti admin support, operasional, customer service, dan lainnya.
 
-    - question: How does the vetting process work?
+    - question: Bagaimana proses seleksi dilakukan?
       answer: >
-        Every Virtual Assistant goes through a structured screening,
-        training, and evaluation process to ensure quality, reliability,
-        and cultural fit.
+        Setiap Virtual Assistant melalui proses screening,
+        pelatihan, dan evaluasi terstruktur untuk memastikan kualitas,
+        reliabilitas, dan cultural fit.
 
-    - question: Can I request a custom VA program?
+    - question: Apakah saya bisa meminta program VA kustom?
       answer: >
-        Yes. We work closely with partners to design custom VA programs
-        tailored to specific operational needs and workflows.
+        Ya. Kami bekerja bersama partner untuk merancang program VA khusus
+        yang disesuaikan dengan kebutuhan operasional dan workflow tertentu.

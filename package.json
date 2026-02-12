@@ -20,9 +20,9 @@
     "@nuxt/ui": "^4.4.0",
     "@nuxtjs/i18n": "10.2.1",
     "@nuxtjs/seo": "3.3.0",
-    "better-sqlite3": "12.5.0",
-    "nuxt": "^4.3.0",
-    "motion-v": "^1.10.2"
+    "better-sqlite3": "^12.6.2",
+    "motion-v": "^1.10.2",
+    "nuxt": "^4.3.0"
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.12.1",
