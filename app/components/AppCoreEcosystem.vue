@@ -22,13 +22,38 @@ useIntersectionObserver(
 
 <template>
   <section ref="sectionRef" class="relative overflow-hidden py-24 lg:py-44">
-    <!-- ================= AMBIENT BACKGROUND ================= -->
-    <div class="pointer-events-none absolute inset-0 -z-10">
+    <!-- ================= BLENDED RIGHT GLASS BACKGROUND ================= -->
+    <div class="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+      <!-- Base -->
+      <div class="absolute inset-0 bg-background-950" />
+
+      <!-- Soft Top Depth -->
       <div
-        class="absolute left-1/2 top-1/2 h-130 w-130 lg:h-225 lg:w-225-translate-x-1/2 -translate-y-1/2 rounded-full bg-primary-500/20 blur-[180px] lg:blur-[220px]"
+        class="absolute inset-0 bg-linear-to-b from-background-900/40 to-transparent"
       />
+
+      <!-- 🔷 MAIN RIGHT GLASS PANEL (BLENDED) -->
       <div
-        class="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.03)_1px,transparent_1px), linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:72px_72px]"
+        class="absolute -top-40 -right-72 w-225 h-375 lg:w-300 lg:h-475 rotate-14 bg-linear-to-b from-background-900/70 via-background-900/50 to-background-900/70"
+      />
+
+      <!-- 🔷 PANEL LEFT FADE (BIAR MENYATU KE SECTION) -->
+      <div
+        class="absolute -top-40 -right-72 w-225 h-375 lg:w-300 lg:h-475 rotate-14 bg-linear-to-l from-transparent via-background-950/60 to-background-950"
+      />
+
+      <!-- 🔷 INNER GLASS HIGHLIGHT -->
+      <div
+        class="absolute -top-32 -right-48 w-200 h-350 lg:w-250 lg:h-425 rotate-14 border border-white/6"
+      />
+
+      <!-- Soft Vertical Accent Lines (lebih subtle) -->
+      <div class="absolute right-24 top-0 bottom-0 w-px bg-white/4" />
+      <div class="absolute right-40 top-0 bottom-0 w-px bg-white/4" />
+
+      <!-- Subtle Primary Ambient Glow -->
+      <div
+        class="absolute right-48 top-1/2 w-125 h-125 -translate-y-1/2 bg-primary-500/6 blur-[90px]"
       />
     </div>
 
