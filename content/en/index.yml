@@ -38,7 +38,6 @@ about_us:
   remarks: We do not simply place VAs.
   description_2: "We design training programs, curate top talent, and provide ongoing supervision to ensure every Virtual Assistant is aligned with your workflows, SOPs, and business goals."
 
-
 va_specializations:
   title: VA Specialization Tracks
   description: >
@@ -143,6 +142,67 @@ pipeline:
         and continuous operational support.
       side: left
       icon: rocket
+
+ecosystem:
+  title: Core Ecosystem
+  description: Remote For Hive is built on a multi-layer ecosystem designed for long-term quality and accountability.
+
+  items:
+    - title: Curated Global Intelligence
+      description: Training framework built to meet real operational needs
+
+    - title: Mentor Network
+      description: Supervision and quality assurance layer
+
+    - title: Elite Pipeline
+      description: Pre-vetted talent pool ready for deployment
+
+    - title: Community Accountability System
+      description: Continuous peer review, mentor oversight, and performance tracking
+
+collaboration_models:
+  title: Collaboration Models
+  description: Flexible engagement models designed to match different stages of organizational growth.
+
+  items:
+    - title: THE STARTER
+      description: >
+        Designed for early-stage startups, SMEs, and founders.
+        Provides foundational VA support with basic role specialization.
+
+    - title: THE SPECIALIST
+      description: >
+        Built for growing companies and agencies with established workflows.
+        Delivers role-specific Virtual Assistants with faster onboarding and higher autonomy.
+
+    - title: THE PARTNER
+      description: >
+        Designed for companies, campuses, and institutions.
+        We co-create training programs aligned with industry demand, company SOPs,
+        and workforce objectives to produce dedicated, role-ready Virtual Assistants.
+
+collaboration_usecase:
+  title: Collaboration Use Cases
+  description: Real-world applications of our collaboration framework across organizations and institutions.
+
+  items:
+    - title: Startup & Company Partnerships
+      points:
+        - Role-specific VA deployment
+        - Reduced hiring and training costs
+        - Scalable remote workforce
+
+    - title: Campus Partnerships
+      points:
+        - Industry-aligned VA programs
+        - Practical remote work exposure for students
+        - Graduate-ready talent pipelines
+
+    - title: Custom Workforce Programs
+      points:
+        - SOP-based training design
+        - Dedicated talent output
+        - Long-term workforce ecosystem development
 
 faq:
   title: Frequently Asked Questions
