@@ -66,6 +66,12 @@ export default defineNuxtConfig({
     ],
   },
 
+  content: {
+    database: {
+      type: "pglite",
+    },
+  },
+
   compatibilityDate: "2025-01-15",
 
   eslint: {
