@@ -83,6 +83,10 @@ export default defineNuxtConfig({
     },
   },
 
+  nitro: {
+    preset: "static",
+  },
+
   devServer: {
     port: 5100,
   },
