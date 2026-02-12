@@ -10,7 +10,7 @@ const { data: pageContent } = await useAsyncData(
 <template>
   <UPageCTA
     title="Ready to be Part of Remote For Hive?"
-    :description="'Lorem ipsum dolor sit amet'"
+    :description="'Please be part of remote for hive'"
     variant="solid"
   >
     <StarsBackground> </StarsBackground>
