@@ -137,6 +137,13 @@ export const collections = {
         })
         .optional(),
 
+      footer: z
+        .object({
+          address: z.string(),
+          address_lines: z.array(z.string()),
+        })
+        .optional(),
+
       external_links: z
         .object({
           whatsapp: z.string(),
