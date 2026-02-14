@@ -7,7 +7,7 @@ import { useIntersectionObserver } from "@vueuse/core";
    ========================================================= */
 import AdminVector from "./images/AdminVector.vue";
 import HRVector from "./images/HRVector.vue";
-import SupportVector from "./images/SupportVector.vue";
+import ServicesVector from "./images/ServicesVector.vue";
 import OperationsVector from "./images/OperationsVector.vue";
 import SocialVector from "./images/SocialVector.vue";
 import LeadVector from "./images/LeadVector.vue";
@@ -20,7 +20,7 @@ import CustomVector from "./images/CustomVector.vue";
 type VectorKey =
   | "AdminVector"
   | "HRVector"
-  | "SupportVector"
+  | "ServicesVector"
   | "OperationsVector"
   | "SocialVector"
   | "LeadVector"
@@ -30,7 +30,7 @@ type VectorKey =
 const vectors: Record<VectorKey, unknown> = {
   AdminVector,
   HRVector,
-  SupportVector,
+  ServicesVector,
   OperationsVector,
   SocialVector,
   LeadVector,
