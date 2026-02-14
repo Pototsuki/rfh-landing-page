@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useI18n } from '#i18n';
+
 const { locale } = useI18n();
 
 const { data: pageContent } = await useAsyncData(
@@ -19,7 +21,9 @@ const { data: pageContent } = await useAsyncData(
       <!-- Desktop -->
       <LanguageSwitcher></LanguageSwitcher>
       <UButton
-        aria-label="Join Now"
+        :href="pageContent?.external_links?.whatsapp"
+        :aria-label="pageContent?.header?.button.join_now"
+        target="_blank"
         color="primary"
         size="md"
         variant="solid"
