@@ -56,16 +56,10 @@ va_specializations:
       class: text-xl lg:text-2xl
       vector: HRVector
 
-    - title: Customer Support
-      description: Sistem ticketing dan peningkatan CSAT.
-      class: text-xl lg:text-2xl
-      vector: SupportVector
-
-    - title: Operasional
-      description: >
-        Standarisasi workflow, optimasi proses, dan manajemen CRM
+    - title: Customer Support Dan Operasional
+      description: Standarisasi workflow, optimasi proses, dan manajemen CRM
         untuk tim yang berkembang.
-      class: lg:row-span-2 text-xl lg:text-2xl
+      class: text-xl lg:text-2xl
       vector: OperationsVector
 
     - title: Media Sosial
@@ -85,13 +79,18 @@ va_specializations:
       class: text-xl lg:text-2xl
       vector: DataVector
 
+    - title: Pembuatan Landing Page
+      description: >
+        Landing page modern dan responsif untuk membantu Anda mendapatkan lebih banyak leads dan penjualan.
+      class: lg:row-span-2 text-xl lg:text-2xl
+      vector: ServicesVector
+
     - title: Peran Kustom
       description: >
         Disesuaikan dengan SOP Partner. Kami membangun workflow khusus dan pelatihan spesialis
         sesuai kebutuhan bisnis unik Anda.
       class: text-xl lg:text-2xl
       vector: CustomVector
-
 pipeline:
   title_parts:
     - Pipeline

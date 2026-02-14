@@ -59,16 +59,10 @@ va_specializations:
       class: text-xl lg:text-2xl
       vector: HRVector
 
-    - title: Customer Support
-      description: Ticketing systems and CSAT excellence.
-      class: text-xl lg:text-2xl
-      vector: SupportVector
-
-    - title: Operations
-      description: >
-        Standardizing workflows, process optimization, and CRM management
+    - title: Customer Support And Operations
+      description: Standardizing workflows, process optimization, and CRM management
         for scaling teams.
-      class: lg:row-span-2 text-xl lg:text-2xl
+      class: text-xl lg:text-2xl
       vector: OperationsVector
 
     - title: Social Media
@@ -87,6 +81,12 @@ va_specializations:
       description: High-accuracy AI training and labeling.
       class: text-xl lg:text-2xl
       vector: DataVector
+
+    - title: Landing Page Services
+      description: >
+        Modern, responsive landing pages to help you generate more leads and sales.
+      class: lg:row-span-2 text-xl lg:text-2xl
+      vector: ServicesVector
 
     - title: Custom Roles
       description: >

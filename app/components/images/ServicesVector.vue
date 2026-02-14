@@ -42,7 +42,7 @@
     </g>
 
     <!-- =====================
-         SUPPORT QUEUE / SLA
+         SERVICES QUEUE / SLA
          ===================== -->
     <g
       class="stroke-current opacity-35"
