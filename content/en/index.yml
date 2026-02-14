@@ -7,6 +7,7 @@ seo:
 header:
   button:
     join_now: Join Now
+    see_courses: See Courses
 
 hero:
   title_parts:
@@ -229,3 +230,14 @@ faq:
       answer: >
         Yes. We work closely with partners to design custom VA programs
         tailored to specific operational needs and workflows.
+
+footer:
+  address: Our Office
+  address_lines:
+    - "18 Office Park, Jl. TB Simatupang Kav. 18 Lt. 25"
+    - "Suite A2 Kebagusan, Ps. Minggu, Kota Jakarta"
+    - "Selatan Daerah Khusus Ibukota Jakarta 12520"
+
+external_links:
+  whatsapp: https://wa.me/628567999896
+  course: https://courses.remoteforhive.com

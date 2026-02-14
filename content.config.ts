@@ -37,6 +37,7 @@ export const collections = {
         .object({
           button: z.object({
             join_now: z.string(),
+            see_courses: z.string(),
           }),
         })
         .optional(),
@@ -133,6 +134,13 @@ export const collections = {
           title: z.string().optional(),
           description: z.string().optional(),
           items: z.array(faqItemSchema),
+        })
+        .optional(),
+
+      external_links: z
+        .object({
+          whatsapp: z.string(),
+          course: z.string(),
         })
         .optional(),
     }),

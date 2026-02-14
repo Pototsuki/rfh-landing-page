@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useI18n } from '#i18n';
+
 const { locale } = useI18n();
 
 const { data: page } = await useAsyncData(
@@ -98,7 +100,10 @@ const { data: page } = await useAsyncData(
                 <UButton
                   v-for="cta in page?.hero.cta"
                   :key="cta.label"
+                  :href="page?.external_links?.whatsapp"
                   :label="cta.label"
+                  :aria-label="cta.label"
+                  target="_blank"
                   class="text-sm px-4 py-2 lg:text-base lg:px-6 lg:py-3 transition duration-300 ease-out hover:-translate-y-1 hover:shadow-lg active:translate-y-0"
                 />
               </div>

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { SelectItem } from "@nuxt/ui";
+import { useI18n } from '#i18n';
 
 const { locale, setLocale } = useI18n();
 

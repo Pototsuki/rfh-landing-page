@@ -7,6 +7,7 @@ seo:
 header:
   button:
     join_now: Gabung Sekarang
+    see_courses: Lihat Kelas
 
 hero:
   title_parts:
@@ -223,3 +224,14 @@ faq:
       answer: >
         Ya. Kami bekerja bersama partner untuk merancang program VA khusus
         yang disesuaikan dengan kebutuhan operasional dan workflow tertentu.
+
+footer:
+  address: Kantor Kami
+  address_lines:
+    - "18 Office Park, Jl. TB Simatupang Kav. 18 Lt. 25"
+    - "Suite A2 Kebagusan, Ps. Minggu, Kota Jakarta"
+    - "Selatan Daerah Khusus Ibukota Jakarta 12520"
+
+external_links:
+  whatsapp: https://wa.me/628567999896
+  course: https://courses.remoteforhive.com
